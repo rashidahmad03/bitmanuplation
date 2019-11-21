@@ -6,5 +6,5 @@ public class sumofzor {
 		// TODO Auto-generated method stub
 
 	}
-
+fsdf
 }
