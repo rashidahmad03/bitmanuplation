@@ -1,7 +1,7 @@
 package greak;
 
 import java.util.Scanner;
-
+//# equal sum and Xor 
 public class sumofzor {
 
 	public static void main(String[] args) {
@@ -9,6 +9,7 @@ public class sumofzor {
 Scanner sc=new Scanner(System.in);
 			int n=sc.nextInt();
 			System.out.println(countlop(n));
+			System.out.println(bitcount(n));
 	}
 	public static int countlop(int n) {
 		int c=0;
@@ -19,7 +20,15 @@ Scanner sc=new Scanner(System.in);
 		return c;
 	}
 	public static int bitcount(int n) {
-		return n;
+		int c=0;
+		while(n!=0) {
+			if((n & 1)==0) {
+				c++;
+			}
+			n=n>>1;
+		}
+		
+		return 1<<c;
 	}
 
 }
